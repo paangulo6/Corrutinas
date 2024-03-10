@@ -5,8 +5,6 @@ import kotlinx.coroutines.*
 class Asincrono {
 }
 
-
-
 fun main() {
     val time = measureTimeMillis {
         runBlocking {
