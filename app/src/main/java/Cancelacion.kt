@@ -1,10 +1,8 @@
-
-/*
 import kotlinx.coroutines.*
 
-
-class Asincrono {
+class Cancelacion {
 }
+
 
 
 fun main() {
@@ -18,7 +16,11 @@ fun main() {
 suspend fun getWeatherReport() = coroutineScope {
     val forecast = async { getForecast() }
     val temperature = async { getTemperature() }
-    "${forecast.await()} ${temperature.await()}"
+
+    delay(200)
+    temperature.cancel()
+
+    "${forecast.await()}"
 }
 
 suspend fun getForecast(): String {
@@ -30,5 +32,3 @@ suspend fun getTemperature(): String {
     delay(1000)
     return "30\u00b0C"
 }
-
-*/
