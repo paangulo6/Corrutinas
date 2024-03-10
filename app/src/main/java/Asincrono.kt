@@ -1,5 +1,5 @@
 
-/*
+
 import kotlinx.coroutines.*
 
 
@@ -31,4 +31,3 @@ suspend fun getTemperature(): String {
     return "30\u00b0C"
 }
 
-*/

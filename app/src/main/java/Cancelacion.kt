@@ -1,4 +1,4 @@
-import kotlinx.coroutines.*
+/*import kotlinx.coroutines.*
 
 class Cancelacion {
 }
@@ -32,3 +32,4 @@ suspend fun getTemperature(): String {
     delay(1000)
     return "30\u00b0C"
 }
+*/
